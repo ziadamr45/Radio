@@ -23,10 +23,10 @@ import { toast } from 'sonner';
 
 // Module-level pure function - no need for useCallback
 function qualityColor(score: number): string {
-  if (score >= 80) return 'text-green-500 bg-green-500/10';
-  if (score >= 60) return 'text-yellow-500 bg-yellow-500/10';
-  if (score >= 40) return 'text-orange-500 bg-orange-500/10';
-  return 'text-red-500 bg-red-500/10';
+  if (score >= 80) return 'text-green-600 bg-green-500/10';
+  if (score >= 60) return 'text-yellow-600 bg-yellow-500/10';
+  if (score >= 40) return 'text-orange-600 bg-orange-500/10';
+  return 'text-red-600 bg-red-500/10';
 }
 
 import { getStationImage as getStationImageUtil, getRandomDefaultImage } from '@/lib/station-image';
@@ -145,14 +145,32 @@ export const StationCard = memo(function StationCard({ station, onPlay, onStatio
   
 
   
+  const handleKeyDown = useCallback((e: React.KeyboardEvent) => {
+    if (e.key === 'Enter' || e.key === ' ') {
+      e.preventDefault();
+      onStationClick?.(station);
+    }
+  }, [onStationClick, station]);
+
+  const handleCompactKeyDown = useCallback((e: React.KeyboardEvent) => {
+    if (e.key === 'Enter' || e.key === ' ') {
+      e.preventDefault();
+      handlePlay();
+    }
+  }, [handlePlay]);
+
   if (compact) {
     return (
       <Card
+        role="button"
+        tabIndex={0}
         className={cn(
-          "cursor-pointer transition-all duration-200 hover:shadow-md",
+          "cursor-pointer transition-all duration-200 hover:shadow-md active:scale-[0.98] focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 outline-none",
           isCurrentStation && "ring-2 ring-primary bg-primary/5"
         )}
         onClick={handlePlay}
+        onKeyDown={handleCompactKeyDown}
+        aria-label={language === 'ar' ? `تشغيل ${station.name}` : `Play ${station.name}`}
       >
         <CardContent className="flex items-center gap-3 p-3">
           <div className="w-10 h-10 rounded-lg overflow-hidden bg-muted flex-shrink-0">
@@ -176,7 +194,8 @@ export const StationCard = memo(function StationCard({ station, onPlay, onStatio
             size="icon"
             variant="ghost"
             onClick={toggleFavorite}
-            className={cn("h-8 w-8", isFav && "text-red-500")}
+            className={cn("h-10 w-10", isFav && "text-red-500")}
+            aria-label={isFav ? (language === 'ar' ? 'إزالة من المفضلة' : 'Remove from favorites') : (language === 'ar' ? 'أضف للمفضلة' : 'Add to favorites')}
           >
             <Heart className={cn("h-4 w-4", isFav && "fill-current")} />
           </Button>
@@ -187,11 +206,15 @@ export const StationCard = memo(function StationCard({ station, onPlay, onStatio
   
   return (
     <Card
+      role="article"
+      tabIndex={0}
       className={cn(
-        "group cursor-pointer transition-all duration-200 hover:shadow-xl overflow-hidden",
+        "group cursor-pointer transition-all duration-200 hover:shadow-xl overflow-hidden active:scale-[0.99] focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 outline-none",
         isCurrentStation && "ring-2 ring-primary bg-primary/5"
       )}
       onClick={() => onStationClick?.(station)}
+      onKeyDown={handleKeyDown}
+      aria-label={station.name}
     >
       <CardContent className="p-0">
         <div className="flex gap-4 p-4">
@@ -210,7 +233,7 @@ export const StationCard = memo(function StationCard({ station, onPlay, onStatio
             {/* Quality badge */}
             {'qualityScore' in station && (
               <div className={cn(
-                "absolute -bottom-1 -right-1 text-[10px] font-bold px-2 py-0.5 rounded-full",
+                "absolute -bottom-1 -end-1 text-[10px] font-bold px-2 py-0.5 rounded-full",
                 qualityColor((station as RadioStation & { qualityScore: number }).qualityScore)
               )}>
                 {Math.round((station as RadioStation & { qualityScore: number }).qualityScore)}%
@@ -234,7 +257,7 @@ export const StationCard = memo(function StationCard({ station, onPlay, onStatio
             <div className="flex flex-wrap items-center gap-2 mt-2.5">
               {station.bitrate > 0 && (
                 <Badge variant="secondary" className="text-[10px] px-2 py-0.5 h-5">
-                  <Signal className="h-3 w-3 mr-1" />
+                  <Signal className="h-3 w-3 me-1" />
                   {station.bitrate}kbps
                 </Badge>
               )}
@@ -296,7 +319,8 @@ export const StationCard = memo(function StationCard({ station, onPlay, onStatio
               size="icon"
               variant="ghost"
               onClick={toggleFavorite}
-              className={cn("h-9 w-9", isFav && "text-red-500")}
+              className={cn("h-11 w-11", isFav && "text-red-500")}
+              aria-label={isFav ? (language === 'ar' ? 'إزالة من المفضلة' : 'Remove from favorites') : (language === 'ar' ? 'أضف للمفضلة' : 'Add to favorites')}
             >
               <Heart className={cn("h-4 w-4", isFav && "fill-current")} />
             </Button>
@@ -305,7 +329,8 @@ export const StationCard = memo(function StationCard({ station, onPlay, onStatio
               size="icon"
               variant="ghost"
               onClick={shareStation}
-              className={cn("h-9 w-9", shareSuccess && "text-green-500")}
+              className={cn("h-11 w-11", shareSuccess && "text-green-500")}
+              aria-label={language === 'ar' ? 'مشاركة المحطة' : 'Share station'}
             >
               {shareSuccess ? (
                 <Check className="h-4 w-4" />
