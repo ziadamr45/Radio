@@ -98,6 +98,12 @@ export default function Home() {
   const [isLoadingMore, setIsLoadingMore] = useState(false);
   const [hasMoreStations, setHasMoreStations] = useState(false);
   const [activeTab, setActiveTab] = useState('all');
+
+  // Scroll to top when switching tabs
+  const handleTabChange = useCallback((tab: string) => {
+    setActiveTab(tab);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }, []);
   const [showFilters, setShowFilters] = useState(false);
   const [mounted, setMounted] = useState(false);
   const [showSplash, setShowSplash] = useState(true);
@@ -139,7 +145,7 @@ export default function Home() {
   // Listen for navigation to Quran tab from AI Assistant
   useEffect(() => {
     const handleNavigateToQuran = () => {
-      setActiveTab('quran');
+      handleTabChange('quran');
     };
     
     window.addEventListener('navigateToQuran', handleNavigateToQuran);
@@ -459,7 +465,7 @@ export default function Home() {
         </div>
 
         {/* Tabs - Under the greeting */}
-        <Tabs value={activeTab} onValueChange={setActiveTab} className="w-full mb-6">
+        <Tabs value={activeTab} onValueChange={handleTabChange} className="w-full mb-6">
           <TabsList className={cn(
             "w-full flex overflow-x-auto gap-1 h-12 px-1 scrollbar-hide",
             language === 'ar' ? 'justify-end flex-row-reverse' : 'justify-start'
@@ -878,7 +884,7 @@ export default function Home() {
                 <p>{language === 'ar' ? 'لم تستمع لأي محطة بعد' : 'No stations played yet'}</p>
                 <Button
                   variant="outline"
-                  onClick={() => setActiveTab('all')}
+                  onClick={() => handleTabChange('all')}
                   className="mt-4"
                 >
                   {language === 'ar' ? 'اكتشف المحطات' : 'Discover Stations'}
