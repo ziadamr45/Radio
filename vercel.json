@@ -1,0 +1,9 @@
+{
+  "buildCommand": "prisma generate && next build",
+  "installCommand": "bun install",
+  "framework": "nextjs",
+  "github": {
+    "silent": false,
+    "autoJobCanceling": false
+  }
+}

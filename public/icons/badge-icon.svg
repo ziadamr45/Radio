@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 96 96">
+  <!-- White radio/speaker silhouette for Android notification badge -->
+  <!-- This should be white (#FFFFFF) on transparent background -->
+  <g fill="white">
+    <!-- Outer circle (speaker body) -->
+    <circle cx="48" cy="48" r="36" fill="none" stroke="white" stroke-width="4"/>
+    <!-- Inner circle (speaker cone) -->
+    <circle cx="48" cy="48" r="20" fill="white"/>
+    <!-- Sound waves -->
+    <path d="M 82 28 Q 94 48 82 68" fill="none" stroke="white" stroke-width="4" stroke-linecap="round"/>
+    <path d="M 70 36 Q 80 48 70 60" fill="none" stroke="white" stroke-width="3" stroke-linecap="round"/>
+  </g>
+</svg>

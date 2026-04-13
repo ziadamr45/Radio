@@ -1,0 +1,169 @@
+{
+  "name": "اسمع راديو",
+  "short_name": "اسمع راديو",
+  "description": "تطبيق اسمع راديو - استمع للقرآن الكريم والمحطات الإذاعية الإسلامية من جميع أنحاء العالم. أذكار صباحية ومسائية ومواعظ",
+  "start_url": "/",
+  "display": "standalone",
+  "display_override": ["window-controls-overlay", "standalone", "browser"],
+  "background_color": "#f8f4f0",
+  "theme_color": "#ea580c",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "lang": "ar",
+  "dir": "rtl",
+  "categories": ["music", "entertainment", "lifestyle", "utilities"],
+  "iarc_rating_id": "",
+  "prefer_related_applications": false,
+  "related_applications": [],
+  "icons": [
+    {
+      "src": "/icons/icon-72x72.png",
+      "sizes": "72x72",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-96x96.png",
+      "sizes": "96x96",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-128x128.png",
+      "sizes": "128x128",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-144x144.png",
+      "sizes": "144x144",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-152x152.png",
+      "sizes": "152x152",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-384x384.png",
+      "sizes": "384x384",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/icons/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/screenshots/home.jpg",
+      "sizes": "768x1344",
+      "type": "image/jpeg",
+      "form_factor": "narrow",
+      "label": "الصفحة الرئيسية"
+    },
+    {
+      "src": "/screenshots/player.jpg",
+      "sizes": "768x1344",
+      "type": "image/jpeg",
+      "form_factor": "narrow",
+      "label": "مشغل الراديو"
+    },
+    {
+      "src": "/screenshots/quran.jpg",
+      "sizes": "768x1344",
+      "type": "image/jpeg",
+      "form_factor": "narrow",
+      "label": "القرآن الكريم"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "المحطات المفضلة",
+      "short_name": "المفضلة",
+      "description": "عرض المحطات المفضلة",
+      "url": "/?tab=recent",
+      "icons": [
+        {
+          "src": "/icons/shortcut-favorites.png",
+          "sizes": "1024x1024",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "القرآن الكريم",
+      "short_name": "القرآن",
+      "description": "استمع للقرآن الكريم",
+      "url": "/?tab=quran",
+      "icons": [
+        {
+          "src": "/icons/shortcut-quran.png",
+          "sizes": "1024x1024",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "المحطات الرواجاً",
+      "short_name": "الرواجاً",
+      "description": "استمع للمحطات الأكثر رواجاً",
+      "url": "/?tab=trending",
+      "icons": [
+        {
+          "src": "/icons/shortcut-trending.png",
+          "sizes": "1024x1024",
+          "type": "image/png"
+        }
+      ]
+    }
+  ],
+  "share_target": {
+    "action": "/share",
+    "method": "GET",
+    "params": {
+      "title": "title",
+      "text": "text",
+      "url": "url"
+    }
+  },
+  "protocol_handlers": [
+    {
+      "protocol": "web+asmaeradio",
+      "url": "/station?id=%s"
+    }
+  ],
+  "handle_links": "preferred",
+  "launch_handler": {
+    "client_mode": "navigate-existing"
+  },
+  "edge_side_panel": {
+    "preferred_width": 400
+  },
+  "notifications": {
+    "badge": "/icons/badge-monochrome.png"
+  }
+}
