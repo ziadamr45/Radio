@@ -21,7 +21,14 @@ const AnimatedBackground = dynamic(() => import('@/components/radio/AnimatedBack
 const SplashScreen = dynamic(() => import('@/components/radio/SplashScreen').then(m => ({ default: m.SplashScreen })), { ssr: false });
 const QuranSection = dynamic(() => import('@/components/quran/QuranSection').then(m => ({ default: m.QuranSection })), { ssr: false });
 const SmartRecommendations = dynamic(() => import('@/components/recommendations/SmartRecommendations').then(m => ({ default: m.SmartRecommendations })), { ssr: false });
-const SettingsPanel = dynamic(() => import('@/components/radio/SettingsPanel').then(m => ({ default: m.SettingsPanel })), { ssr: false });
+const SettingsPanel = dynamic(() => import('@/components/radio/SettingsPanel').then(m => ({ default: m.SettingsPanel })), { 
+  ssr: false,
+  loading: () => (
+    <div className="flex items-center justify-center h-full p-8">
+      <div className="w-8 h-8 border-2 border-muted-foreground/30 border-t-muted-foreground rounded-full animate-spin" />
+    </div>
+  )
+});
 // QuranMiniPlayer & EnhancedMiniPlayer moved to layout.tsx for global persistence
 import { OfflineHandler } from '@/components/offline/OfflineHandler';
 import { NamePrompt } from '@/components/notifications/NamePrompt';

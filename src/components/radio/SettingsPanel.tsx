@@ -534,9 +534,9 @@ export function SettingsPanel({ onBack }: SettingsPanelProps) {
   };
 
   return (
-    <div className="fixed inset-0 z-50 bg-background" dir={isArabic ? 'rtl' : 'ltr'}>
+    <div className="flex flex-col h-full" dir={isArabic ? 'rtl' : 'ltr'}>
       {/* Header */}
-      <header className="sticky top-0 z-40 bg-gradient-to-l from-[#2D8B8B] to-[#237575] shadow-lg">
+      <header className="bg-gradient-to-l from-[#2D8B8B] to-[#237575] shadow-lg shrink-0">
         <div className="container mx-auto px-4 py-4 flex items-center gap-3">
           <Button
             variant="ghost"
@@ -559,7 +559,7 @@ export function SettingsPanel({ onBack }: SettingsPanelProps) {
       </header>
       
       {/* Scrollable Content */}
-      <div className="h-[calc(100vh-72px)] overflow-y-auto">
+      <div className="flex-1 overflow-y-auto">
         <div className="container mx-auto px-4 py-4 space-y-4 pb-24">
 
           {/* User Name Section */}
