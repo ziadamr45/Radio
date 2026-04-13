@@ -63,7 +63,7 @@ export function StationSEOContent({ stationName, country, tags }: StationSEOCont
               <h4 className="text-sm font-semibold mb-2">محتوى إسلامي</h4>
               <p className="text-muted-foreground text-sm leading-7">
                 {stationName} محطة إذاعية إسلامية تقدم محتوى ديني مميز. 
-                يمكنك الاستماع إلى تلاوات القرآن الكريم والأذكار والأناشيد الإسلامية. 
+                يمكنك الاستماع إلى تلاوات القرآن الكريم والأناشيد الإسلامية. 
                 اسمع راديو يجمع لك أفضل المحطات الإسلامية في مكان واحد.
               </p>
             </article>

@@ -59,7 +59,7 @@ export function getTimeBasedRecommendation(timeOfDay: TimeOfDay, language: 'ar' 
     ar: {
       morning: {
         title: 'اقتراحات الصباح',
-        subtitle: 'ابدأ يومك بالقرآن والأذكار',
+        subtitle: 'ابدأ يومك بالقرآن الكريم',
         emoji: '🌅',
       },
       afternoon: {

@@ -12,7 +12,7 @@ import type {
 // ==================== TYPES ====================
 export type TimeOfDay = 'morning' | 'afternoon' | 'evening' | 'night' | 'late_night';
 export type NotificationType = 'time_based' | 'behavior' | 're_engagement' | 'islamic' | 'personal';
-export type NotificationCategory = 'morning' | 'afternoon' | 'evening' | 'night' | 'quran' | 'dhikr' | 'focus' | 'relax';
+export type NotificationCategory = 'morning' | 'afternoon' | 'evening' | 'night' | 'quran' | 'focus' | 'relax';
 
 export interface SmartNotification {
   title: string;
@@ -60,14 +60,14 @@ const DEFAULT_TEMPLATES: Omit<NotificationTemplate, 'id' | 'createdAt' | 'update
   {
     type: 'time_based',
     category: 'morning',
-    titleAr: 'أذكار الصباح 📿',
-    titleEn: 'Morning Azkar 📿',
-    bodyAr: 'لا تنسى أذكار الصباح… دقيقة بسيطة تفرق معاك جدًا',
-    bodyEn: "Don't forget your morning Azkar… a simple minute makes a difference",
-    icon: '📿',
+    titleAr: 'صباح الخير 🌅',
+    titleEn: 'Good Morning 🌅',
+    bodyAr: 'ابدأ يومك بآيات من القرآن الكريم 🤍',
+    bodyEn: 'Start your day with verses from the Holy Quran 🤍',
+    icon: '🌅',
     actionTextAr: 'استمع الآن',
     actionTextEn: 'Listen Now',
-    deepLink: '/?tab=dhikr',
+    deepLink: '/?tab=quran',
     priority: 9,
     isActive: true,
     stationId: null,
@@ -94,14 +94,14 @@ const DEFAULT_TEMPLATES: Omit<NotificationTemplate, 'id' | 'createdAt' | 'update
   {
     type: 'time_based',
     category: 'evening',
-    titleAr: 'أذكار المساء 🌙',
-    titleEn: 'Evening Azkar 🌙',
-    bodyAr: 'حان وقت أذكار المساء… اذكر الله تطمئن',
-    bodyEn: "Time for evening Azkar… remember Allah for peace",
+    titleAr: 'مساء الخير 🌙',
+    titleEn: 'Good Evening 🌙',
+    bodyAr: 'استمع لتلاوات هادئة تريح قلبك وتطمئن فؤادك',
+    bodyEn: 'Listen to calming recitations that comfort your heart',
     icon: '🌙',
     actionTextAr: 'استمع الآن',
     actionTextEn: 'Listen Now',
-    deepLink: '/?tab=dhikr',
+    deepLink: '/?tab=quran',
     priority: 8,
     isActive: true,
     stationId: null,
@@ -141,22 +141,7 @@ const DEFAULT_TEMPLATES: Omit<NotificationTemplate, 'id' | 'createdAt' | 'update
     stationId: null,
     stationName: null,
   },
-  {
-    type: 'islamic',
-    category: 'dhikr',
-    titleAr: 'اذكر الله 📿',
-    titleEn: 'Remember Allah 📿',
-    bodyAr: 'دقيقة بسيطة مع أذكار الصباح تفرق معاك جدًا',
-    bodyEn: 'A simple minute with morning Azkar makes a difference',
-    icon: '📿',
-    actionTextAr: 'استمع',
-    actionTextEn: 'Listen',
-    deepLink: '/?tab=dhikr',
-    priority: 7,
-    isActive: true,
-    stationId: null,
-    stationName: null,
-  },
+
   // Re-engagement notifications
   {
     type: 're_engagement',
@@ -529,10 +514,7 @@ export class NotificationService {
           ar: 'جاهز لجلسة قرآن هادئة؟ 🤍', 
           en: 'Ready for a calm Quran session? 🤍' 
         },
-        dhikr: { 
-          ar: 'خد دقيقة للذكر 📿', 
-          en: 'Take a minute for Dhikr 📿' 
-        },
+
         lecture: { 
           ar: 'في محاضرات جديدة ممكن تعجبك 📚', 
           en: 'New lectures you might like 📚' 

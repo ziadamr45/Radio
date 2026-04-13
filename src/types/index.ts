@@ -41,7 +41,7 @@ export interface AudioTrack {
 }
 
 // Audio Categories
-export type AudioCategory = 'quran' | 'dhikr' | 'lecture' | 'nasheed' | 'radio';
+export type AudioCategory = 'quran' | 'lecture' | 'nasheed' | 'radio';
 
 // Surah Info (for Quran)
 export interface SurahInfo {

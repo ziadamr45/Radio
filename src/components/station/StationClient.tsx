@@ -162,7 +162,7 @@ function generateStationContent(station: RadioStation, language: string) {
   const country = station.country || station.countrycode || 'العالم';
   const tags = station.tags ? station.tags.split(',').map(t => t.trim()).filter(Boolean) : [];
   const isQuran = tags.some(t => ['quran', 'قرآن', 'قران', 'koran', 'quran kareem'].includes(t.toLowerCase()));
-  const isIslamic = tags.some(t => ['islam', 'islamic', 'إسلام', 'nasheed', 'أناشيد', 'azkar', 'أذكار'].includes(t.toLowerCase()));
+  const isIslamic = tags.some(t => ['islam', 'islamic', 'إسلام', 'nasheed', 'أناشيد'].includes(t.toLowerCase()));
   const isNews = tags.some(t => ['news', 'أخبار', 'akhbar'].includes(t.toLowerCase()));
   
   let categoryText = 'ترفيهية';

@@ -206,10 +206,10 @@ export function MandatoryNotificationPrompt() {
               </div>
               <div>
                 <p className="font-medium text-sm">
-                  {isArabic ? 'تذكير بالقرآن والأذكار' : 'Quran and Azkar reminders'}
+                  {isArabic ? 'تذكير بالقرآن والبرامج الإسلامية' : 'Quran and Islamic program reminders'}
                 </p>
                 <p className="text-xs text-muted-foreground">
-                  {isArabic ? 'لا تنسى أذكارك اليومية' : 'Never forget your daily Azkar'}
+                  {isArabic ? 'لا تنسَ استماع القرآن يومياً' : 'Never forget your daily Quran listening'}
                 </p>
               </div>
             </div>

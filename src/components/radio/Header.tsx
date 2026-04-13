@@ -90,7 +90,7 @@ export function Header() {
                   <Menu className="h-5 w-5" />
                 </Button>
               </SheetTrigger>
-              <SheetContent side={isArabic ? 'right' : 'left'} className="w-80 p-0">
+              <SheetContent side="left" className="w-80 p-0">
                 <div className="flex flex-col h-full">
                   <SheetHeader className="p-4 bg-gradient-to-l from-[#2D8B8B] to-[#237575]">
                     <SheetTitle className="text-white flex items-center gap-2">

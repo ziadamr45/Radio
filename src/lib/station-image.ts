@@ -149,7 +149,7 @@ const NASHEED_KEYWORDS = [
 const ISLAMIC_KEYWORDS = [
   'islam', 'إسلام', 'اسلام', 'islamic', 'muslim', 'مسلم',
   'سنة', 'sunna', 'hadith', 'حديث',
-  'fatwa', 'فتوى', 'azkar', 'أذكار', 'اذكار',
+  'fatwa', 'فتوى',
   'mawaqit', 'مواقيت', 'prayer', 'صلاة',
   'taraweeh', 'تراويح', 'duaa', 'دعاء',
   'sheikh', 'شيخ', 'imam', 'إمام',

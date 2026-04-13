@@ -1326,8 +1326,8 @@ export function SettingsPage() {
               <div className="p-3 bg-orange-500/10 rounded-lg">
                 <p className="text-sm text-orange-600 dark:text-orange-400">
                   {isArabic
-                    ? 'فعّل الإشعارات عشان تمنعش رسائل ذكية عن القرآن والأذكار'
-                    : 'Enable notifications to receive smart reminders about Quran and Azkar'}
+                    ? 'فعّل الإشعارات عشان تمنعش رسائل ذكية عن القرآن والبرامج الإسلامية'
+                    : 'Enable notifications to receive smart reminders about Quran and Islamic programs'}
                 </p>
               </div>
               <Button

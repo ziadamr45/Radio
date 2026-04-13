@@ -74,11 +74,11 @@ function generateDescription(station: { name: string; country: string; countryCo
     quran: [
       `إذاعة ${station.name} من أشهر إذاعات القرآن الكريم في ${countryAr}، تقدم تلاوات قرآنية عذبة من كتاب الله على مدار الساعة. استمع الآن بجودة عالية على اسمع راديو.`,
       `${station.name} إذاعة قرآنية متميزة تبث من ${countryAr}، تقدم أفضل التلاوات القرآنية بصوت قراء كبار. بث مباشر بدون تقطيع.`,
-      `استمع إلى ${station.name} بث مباشر للقرآن الكريم من ${countryAr}. إذاعة متخصصة في تلاوات القرآن والأذكار.`,
+      `استمع إلى ${station.name} بث مباشر للقرآن الكريم من ${countryAr}. إذاعة متخصصة في تلاوات القرآن الكريم.`,
     ],
     islamic: [
       `${station.name} إذاعة إسلامية متخصصة من ${countryAr} تقدم برامج دينية متنوعة وأناشيد إسلامية. استمع الآن على اسمع راديو.`,
-      `إذاعة ${station.name} تبث من ${countryAr} وتقدم محتوى إسلامي مميز يشمل الأناشيد والأذكار والبرامج الدينية.`,
+      `إذاعة ${station.name} تبث من ${countryAr} وتقدم محتوى إسلامي مميز يشمل الأناشيد والبرامج الدينية.`,
     ],
     nasheed: [
       `${station.name} إذاعة متخصصة في الأناشيد الإسلامية من ${countryAr}، تقدم أجمل الأناشيد والابتهالات. استمع الآن.`,
@@ -208,8 +208,7 @@ const RAW_STATIONS: Array<Omit<StationData, 'slug' | 'description'>> = [
   { id: 'rahma-radio', name: 'إذاعة الرحمة', country: 'Egypt', countryCode: 'EG', category: 'islamic', streamUrl: 'https://stream.zeno.fm/yn65fsaurfhvv', tags: ['islamic', 'رحمة'] },
   { id: 'taqwa-radio', name: 'إذاعة التقوى', country: 'UAE', countryCode: 'AE', category: 'islamic', streamUrl: 'https://stream.zeno.fm/yn65fsaurfhvv', tags: ['islamic', 'تقوى'] },
   { id: 'salafi-radio', name: 'إذاعة السلفية', country: 'Saudi Arabia', countryCode: 'SA', category: 'islamic', streamUrl: 'https://stream.zeno.fm/yn65fsaurfhvv', tags: ['islamic', 'سلفية'] },
-  { id: 'azkar-morning', name: 'إذاعة أذكار الصباح', country: 'Egypt', countryCode: 'EG', category: 'islamic', streamUrl: 'https://stream.zeno.fm/yn65fsaurfhvv', tags: ['islamic', 'أذكار', 'صباح'] },
-  { id: 'azkar-evening', name: 'إذاعة أذكار المساء', country: 'Egypt', countryCode: 'EG', category: 'islamic', streamUrl: 'https://stream.zeno.fm/yn65fsaurfhvv', tags: ['islamic', 'أذكار', 'مساء'] },
+
   { id: 'duaa-radio', name: 'إذاعة الدعاء', country: 'Saudi Arabia', countryCode: 'SA', category: 'islamic', streamUrl: 'https://stream.zeno.fm/yn65fsaurfhvv', tags: ['islamic', 'دعاء'] },
   { id: 'fiqh-radio', name: 'إذاعة الفقه الإسلامي', country: 'Egypt', countryCode: 'EG', category: 'islamic', streamUrl: 'https://stream.zeno.fm/yn65fsaurfhvv', tags: ['islamic', 'فقه'] },
   { id: 'seerah-radio', name: 'إذاعة السيرة النبوية', country: 'Saudi Arabia', countryCode: 'SA', category: 'islamic', streamUrl: 'https://stream.zeno.fm/yn65fsaurfhvv', tags: ['islamic', 'سيرة'] },

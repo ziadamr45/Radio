@@ -339,7 +339,7 @@ export function NotificationSettings({ language = 'ar', onClose }: NotificationS
               <div>
                 <p className="text-sm font-medium">{isArabic ? 'إسلامية' : 'Islamic'}</p>
                 <p className="text-xs text-muted-foreground">
-                  {isArabic ? 'أذكار وتلاوات قرآنية' : 'Azkar and Quran recitations'}
+                  {isArabic ? 'تلاوات قرآنية وبرامج إسلامية' : 'Quran recitations and Islamic programs'}
                 </p>
               </div>
             </div>
