@@ -206,7 +206,7 @@ export const StationCard = memo(function StationCard({ station, onPlay, onStatio
   
   return (
     <Card
-      role="article"
+      role="button"
       tabIndex={0}
       className={cn(
         "group cursor-pointer transition-all duration-200 hover:shadow-xl overflow-hidden active:scale-[0.99] focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 outline-none",
@@ -214,7 +214,7 @@ export const StationCard = memo(function StationCard({ station, onPlay, onStatio
       )}
       onClick={() => onStationClick?.(station)}
       onKeyDown={handleKeyDown}
-      aria-label={station.name}
+      aria-label={language === 'ar' ? `فتح تفاصيل ${station.name}` : `Open details for ${station.name}`}
     >
       <CardContent className="p-0">
         <div className="flex gap-4 p-4">
@@ -293,8 +293,9 @@ export const StationCard = memo(function StationCard({ station, onPlay, onStatio
           <Button
             size="sm"
             onClick={(e) => { e.stopPropagation(); handlePlay(); }}
-            className="gap-2 h-9 px-4"
+            className="gap-2 h-10 px-4"
             disabled={disabled}
+            aria-label={isCurrentStation && isPlaying ? (language === 'ar' ? 'إيقاف مؤقت' : 'Pause') : (language === 'ar' ? 'تشغيل' : 'Play')}
           >
             {isThisLoading ? (
               <>
