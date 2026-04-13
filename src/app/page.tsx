@@ -21,14 +21,7 @@ const AnimatedBackground = dynamic(() => import('@/components/radio/AnimatedBack
 const SplashScreen = dynamic(() => import('@/components/radio/SplashScreen').then(m => ({ default: m.SplashScreen })), { ssr: false });
 const QuranSection = dynamic(() => import('@/components/quran/QuranSection').then(m => ({ default: m.QuranSection })), { ssr: false });
 const SmartRecommendations = dynamic(() => import('@/components/recommendations/SmartRecommendations').then(m => ({ default: m.SmartRecommendations })), { ssr: false });
-const SettingsPanel = dynamic(() => import('@/components/radio/SettingsPanel').then(m => ({ default: m.SettingsPanel })), { 
-  ssr: false,
-  loading: () => (
-    <div className="flex items-center justify-center h-full p-8">
-      <div className="w-8 h-8 border-2 border-muted-foreground/30 border-t-muted-foreground rounded-full animate-spin" />
-    </div>
-  )
-});
+const SettingsPanel = dynamic(() => import('@/components/radio/SettingsPanel').then(m => ({ default: m.SettingsPanel })), { ssr: false });
 // QuranMiniPlayer & EnhancedMiniPlayer moved to layout.tsx for global persistence
 import { OfflineHandler } from '@/components/offline/OfflineHandler';
 import { NamePrompt } from '@/components/notifications/NamePrompt';
@@ -422,7 +415,7 @@ export default function Home() {
       <div className={cn("flex flex-col flex-1", showSplash && "opacity-0 pointer-events-none")}>
       {/* Settings Panel - Using Sheet for better UX */}
       <Sheet open={settingsOpen} onOpenChange={setSettingsOpen}>
-        <SheetContent side={language === 'ar' ? 'left' : 'right'} className="w-full sm:max-w-md overflow-y-auto p-0">
+        <SheetContent side={language === 'ar' ? 'left' : 'right'} className="w-full sm:max-w-md overflow-y-auto p-0 [&>button]:hidden">
           <SettingsPanel onBack={() => setSettingsOpen(false)} />
         </SheetContent>
       </Sheet>
