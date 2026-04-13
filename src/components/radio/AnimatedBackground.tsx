@@ -23,10 +23,22 @@ export function AnimatedBackground() {
     const canvas = canvasRef.current;
     if (!canvas) return;
     
-    // Skip heavy animations on low-end devices
-    if (isLowEndDevice()) {
-      // Just set a static CSS background, no canvas animation
-      return;
+    const lowEnd = isLowEndDevice();
+    
+    // Always resize canvas to match viewport - even on low-end devices
+    const resizeCanvas = () => {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+    };
+    
+    resizeCanvas();
+    window.addEventListener('resize', resizeCanvas);
+    
+    // On low-end devices, just use the CSS background gradient - skip canvas animation
+    if (lowEnd) {
+      return () => {
+        window.removeEventListener('resize', resizeCanvas);
+      };
     }
     
     const ctx = canvas.getContext('2d');
@@ -37,14 +49,6 @@ export function AnimatedBackground() {
     let particles: Particle[] = [];
     let isVisible = true;
     let frameCount = 0;
-    
-    const resizeCanvas = () => {
-      canvas.width = window.innerWidth;
-      canvas.height = window.innerHeight;
-    };
-    
-    resizeCanvas();
-    window.addEventListener('resize', resizeCanvas);
     
     // Pause animation when tab is hidden to save CPU/battery
     const handleVisibilityChange = () => {
