@@ -15,7 +15,7 @@ The project focuses on performance, scalability, responsiveness, and creating a 
 ## 🚀 Features
 
 - 🎧 Live radio streaming
-- 🤖 AI-powered assistant
+- 🤖 Smart assistant
 - 🌍 Arabic & English support (i18n)
 - 🔔 Push notifications system
 - 📱 Fully responsive design
@@ -45,7 +45,7 @@ The project focuses on performance, scalability, responsiveness, and creating a 
 - NextAuth
 
 ### Integrations
-- Anthropic Claude AI
+- Smart Assistant
 - Web Push Notifications
 - Radio APIs
 
