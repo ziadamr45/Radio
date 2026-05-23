@@ -111,3 +111,12 @@ Developed by Ziad Amr
 ## ⭐ Support
 
 If you like this project, consider giving it a star ⭐
+
+
+---
+
+## ⚠️ Source Available License | رخصة عرض المصدر
+
+This project is available for **viewing and reference only**. The code cannot be copied, reproduced, or used in other projects. See [LICENSE.md](./LICENSE.md) for full details.
+
+هذا المشروع متاح **للعرض والاطلاع فقط**. لا يمكن نسخ الكود أو إعادة إنتاجه أو استخدامه في مشاريع أخرى. راجع [LICENSE.md](./LICENSE.md) للتفاصيل الكاملة.
