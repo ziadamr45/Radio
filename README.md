@@ -191,7 +191,7 @@ src/
 
 ### Screenshots
 
-> Screenshots will be added soon.
+![Esma3 Radio Screenshot](screenshot.png)
 
 ### Installation
 
