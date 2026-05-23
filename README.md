@@ -41,29 +41,29 @@
 
 | التقنية | الاستخدام |
 |---------|-----------|
-| Next.js | إطار العمل |
-| React 19 | مكتبة واجهة المستخدم |
-| TypeScript | تطوير آمن بالأنواع |
-| Tailwind CSS | التصميم |
-| shadcn/ui | مكونات واجهة المستخدم |
-| Framer Motion | الحركات والأنيميشن |
+| ![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat&logo=next.js&logoColor=white) | إطار العمل |
+| ![React](https://img.shields.io/badge/React-61DAFB?style=flat&logo=react&logoColor=black) | مكتبة واجهة المستخدم |
+| ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=typescript&logoColor=white) | تطوير آمن بالأنواع |
+| ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=flat&logo=tailwindcss&logoColor=white) | التصميم |
+| ![shadcn/ui](https://img.shields.io/badge/shadcn/ui-000000?style=flat) | مكونات واجهة المستخدم |
+| ![Framer Motion](https://img.shields.io/badge/Framer_Motion-0055FF?style=flat&logo=framer&logoColor=white) | الحركات والأنيميشن |
 
 ### الخلفية
 
 | التقنية | الاستخدام |
 |---------|-----------|
-| Next.js API Routes | مسارات API |
-| PostgreSQL | قاعدة البيانات |
-| Prisma ORM | إدارة قاعدة البيانات |
-| NextAuth | نظام المصادقة |
+| ![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat&logo=next.js&logoColor=white) | مسارات API |
+| ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat&logo=postgresql&logoColor=white) | قاعدة البيانات |
+| ![Prisma](https://img.shields.io/badge/Prisma-2D3748?style=flat&logo=prisma&logoColor=white) | إدارة قاعدة البيانات |
+| ![NextAuth](https://img.shields.io/badge/NextAuth-000000?style=flat) | نظام المصادقة |
 
 ### التكاملات
 
 | التقنية | الاستخدام |
 |---------|-----------|
-| مساعد ذكي | تكامل المساعد الذكي |
-| إشعارات Web Push | نظام الإشعارات الفورية |
-| Radio APIs | واجهات بث الراديو |
+| ![Smart Assistant](https://img.shields.io/badge/Smart_Assistant-FF6B6B?style=flat) | تكامل المساعد الذكي |
+| ![Web Push](https://img.shields.io/badge/Web_Push-FFA500?style=flat) | نظام الإشعارات الفورية |
+| ![Radio APIs](https://img.shields.io/badge/Radio_APIs-00D4AA?style=flat) | واجهات بث الراديو |
 
 ## 📂 هيكل المشروع
 
@@ -152,29 +152,29 @@ The project focuses on performance, scalability, responsiveness, and creating a 
 
 | Technology | Purpose |
 |------------|---------|
-| Next.js | Framework |
-| React 19 | UI Library |
-| TypeScript | Type-safe Development |
-| Tailwind CSS | Styling |
-| shadcn/ui | UI Components |
-| Framer Motion | Animations |
+| ![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat&logo=next.js&logoColor=white) | Framework |
+| ![React](https://img.shields.io/badge/React-61DAFB?style=flat&logo=react&logoColor=black) | UI Library |
+| ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=typescript&logoColor=white) | Type-safe Development |
+| ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=flat&logo=tailwindcss&logoColor=white) | Styling |
+| ![shadcn/ui](https://img.shields.io/badge/shadcn/ui-000000?style=flat) | UI Components |
+| ![Framer Motion](https://img.shields.io/badge/Framer_Motion-0055FF?style=flat&logo=framer&logoColor=white) | Animations |
 
 #### Backend
 
 | Technology | Purpose |
 |------------|---------|
-| Next.js API Routes | API Routes |
-| PostgreSQL | Database |
-| Prisma ORM | Database Management |
-| NextAuth | Authentication |
+| ![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat&logo=next.js&logoColor=white) | API Routes |
+| ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat&logo=postgresql&logoColor=white) | Database |
+| ![Prisma](https://img.shields.io/badge/Prisma-2D3748?style=flat&logo=prisma&logoColor=white) | Database Management |
+| ![NextAuth](https://img.shields.io/badge/NextAuth-000000?style=flat) | Authentication |
 
 #### Integrations
 
 | Technology | Purpose |
 |------------|---------|
-| Smart Assistant | AI assistant integration |
-| Web Push Notifications | Push notification system |
-| Radio APIs | Radio streaming APIs |
+| ![Smart Assistant](https://img.shields.io/badge/Smart_Assistant-FF6B6B?style=flat) | AI assistant integration |
+| ![Web Push](https://img.shields.io/badge/Web_Push-FFA500?style=flat) | Push notification system |
+| ![Radio APIs](https://img.shields.io/badge/Radio_APIs-00D4AA?style=flat) | Radio streaming APIs |
 
 ### Project Structure
 
