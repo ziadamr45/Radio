@@ -78,9 +78,9 @@ src/
  └── types/
 ```
 
-## 📸 لقطات الشاشة
+## 📸 لقطات الشاشة | Screenshots
 
-> سيتم إضافة لقطات الشاشة قريبًا.
+![Esma3 Radio Screenshot](screenshot.png)
 
 ## ⚙️ التثبيت
 
