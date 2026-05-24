@@ -383,8 +383,6 @@ export function ChatPage({ className }: ChatPageProps) {
               <Globe className="h-3 w-3" />
               {isArabic ? 'العربية' : 'Arabic'}
             </span>
-            <span>•</span>
-            <span>{isArabic ? 'مدعوم بالذكاء الاصطناعي' : 'AI-powered'}</span>
           </div>
         </div>
       </div>

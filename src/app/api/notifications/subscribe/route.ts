@@ -3,7 +3,7 @@ import { db } from '@/lib/db';
 import { NotificationService } from '@/lib/notification-service';
 
 // VAPID keys - Hardcoded for production reliability (same as broadcast route)
-const VAPID_PUBLIC_KEY = process.env.VAPID_PUBLIC_KEY || 'BDcwJegRw6TYrFWBi4QzXkc2kAN8D8Rb1UufyBW5jS8to1MUqnL1S1kcbC3FzoZx5SKgYccyBpn3AWLfwx_odUc';
+const VAPID_PUBLIC_KEY = process.env.VAPID_PUBLIC_KEY || '';
 
 // Helper: get or create user for a device (same logic as /api/user/route.ts)
 async function getOrCreateUser(deviceId: string, userAgent?: string | null, platform?: string | null): Promise<string> {

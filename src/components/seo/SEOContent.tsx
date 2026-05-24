@@ -84,12 +84,12 @@ export function SEOContent() {
           <article className="prose prose-sm dark:prose-invert max-w-none px-1">
             <h3 className="text-base font-bold mb-3 flex items-center gap-2">
               <Sparkles className="h-4 w-4 text-primary" />
-              {language === 'ar' ? 'مساعد ذكي للبحث والتوصيات - راديو بالذكاء الاصطناعي' : 'AI Assistant for Search & Recommendations'}
+              {language === 'ar' ? 'مساعد ذكي للبحث والتوصيات' : 'Smart Assistant for Search & Recommendations'}
             </h3>
             <p className="text-muted-foreground text-sm leading-7 mb-3">
               {language === 'ar'
-                ? 'يتميز تطبيق اسمع راديو بمساعد ذكي مدعوم بالذكاء الاصطناعي يمكنك من خلاله البحث عن أي محطة راديو بالصوت أو الكتابة. مساعد ذكي للبحث والتوصيات يساعدك في العثور على أفضل محطات الراديو المناسبة لذوقك. تشغيل الراديو بالصوت وتشغيل القرآن بالصوت بسهولة. AI radio player ذكي يفهم احتياجاتك ويقدم لك توصيات مخصصة.'
-                : 'Esmaa Radio features an AI-powered smart assistant that allows you to search for any radio station by voice or text. Intelligent search and recommendation assistant helps you find the best radio stations matching your taste. Voice control radio and Quran playback. Smart AI radio player that understands your needs and provides personalized recommendations.'}
+                ? 'يتميز تطبيق اسمع راديو بمساعد ذكي يمكنك من خلاله البحث عن أي محطة راديو بالصوت أو الكتابة. مساعد ذكي للبحث والتوصيات يساعدك في العثور على أفضل محطات الراديو المناسبة لذوقك. تشغيل الراديو بالصوت وتشغيل القرآن بالصوت بسهولة. مشغل راديو ذكي يفهم احتياجاتك ويقدم لك توصيات مخصصة.'
+                : 'Esmaa Radio features a smart assistant that allows you to search for any radio station by voice or text. Intelligent search and recommendation assistant helps you find the best radio stations matching your taste. Voice control radio and Quran playback. Smart radio player that understands your needs and provides personalized recommendations.'}
             </p>
           </article>
 
@@ -106,7 +106,7 @@ export function SEOContent() {
               <li>{language === 'ar' ? '114 سورة من القرآن الكريم كاملة' : 'Complete 114 Quran surahs'}</li>
               <li>{language === 'ar' ? 'إذاعة القرآن الكريم بث مباشر' : 'Live Quran radio streaming'}</li>
               <li>{language === 'ar' ? 'أناشيد إسلامية ومحاضرات دينية' : 'Islamic nasheeds and religious lectures'}</li>
-              <li>{language === 'ar' ? 'مساعد ذكاء اصطناعي للبحث عن المحطات' : 'AI assistant to find stations'}</li>
+              <li>{language === 'ar' ? 'مساعد ذكي للبحث عن المحطات' : 'Smart assistant to find stations'}</li>
               <li>{language === 'ar' ? 'وضع إسلامي لحجب المحتوى غير المناسب' : 'Islamic mode to filter inappropriate content'}</li>
               <li>{language === 'ar' ? 'مؤقت نوم ذكي' : 'Smart sleep timer'}</li>
               <li>{language === 'ar' ? 'يعمل كتطبيق على الهاتف (PWA)' : 'Works as a mobile app (PWA)'}</li>
@@ -118,8 +118,8 @@ export function SEOContent() {
           <div className="flex flex-wrap gap-2 pt-2 border-t">
             <span className="text-xs text-muted-foreground">
               {language === 'ar'
-                ? 'ابحث في اسمع راديو عن: اسمع راديو، راديو مباشر، بث مباشر راديو، إذاعة القرآن الكريم، راديو مصر، راديو السعودية، راديو تركيا، راديو بريطانيا، راديو أمريكا، راديو فرنسا، راديو ألمانيا، راديو اليابان، راديو الهند، أناشيد إسلامية، سورة البقرة، سورة الكهف، سورة يس، عبد الباسط عبد الصمد، مشاري العفاسي، راديو بالذكاء الاصطناعي، تطبيق راديو مجاني، أفضل موقع راديو، راديو بدون تقطيع، إذاعة إسلامية'
-                : 'Search Esmaa Radio for: asmae radio, listen to radio, live radio, online radio, Quran radio, Egypt radio, Saudi Arabia radio, Turkey radio, UK radio, USA radio, France radio, Germany radio, Japan radio, India radio, Islamic nasheeds, Surah Baqarah, Surah Kahf, Surah Yasin, Abdul Basit Abdul Samad, Mishary Alafasy, AI radio, smart radio app, free radio app, best radio website, radio without interruptions, Islamic radio'}
+                ? 'ابحث في اسمع راديو عن: اسمع راديو، راديو مباشر، بث مباشر راديو، إذاعة القرآن الكريم، راديو مصر، راديو السعودية، راديو تركيا، راديو بريطانيا، راديو أمريكا، راديو فرنسا، راديو ألمانيا، راديو اليابان، راديو الهند، أناشيد إسلامية، سورة البقرة، سورة الكهف، سورة يس، عبد الباسط عبد الصمد، مشاري العفاسي، تطبيق راديو مجاني، أفضل موقع راديو، راديو بدون تقطيع، إذاعة إسلامية'
+                : 'Search Esmaa Radio for: asmae radio, listen to radio, live radio, online radio, Quran radio, Egypt radio, Saudi Arabia radio, Turkey radio, UK radio, USA radio, France radio, Germany radio, Japan radio, India radio, Islamic nasheeds, Surah Baqarah, Surah Kahf, Surah Yasin, Abdul Basit Abdul Samad, Mishary Alafasy, smart radio app, free radio app, best radio website, radio without interruptions, Islamic radio'}
             </span>
           </div>
         </div>

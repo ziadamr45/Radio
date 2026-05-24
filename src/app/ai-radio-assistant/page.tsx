@@ -61,7 +61,7 @@ const features = [
   {
     icon: Brain,
     title: 'الذكاء الاصطناعي',
-    description: 'يستخدم تقنيات الذكاء الاصطناعي لفهم طلباتك والرد عليها بشكل ذكي. يتعلم من تفضيلاتك مع الوقت.',
+    description: 'يستخدم تقنيات متقدمة لفهم طلباتك والرد عليها بشكل ذكي. يتعلم من تفضيلاتك مع الوقت.',
   },
   {
     icon: Radio,
@@ -249,7 +249,7 @@ export default function AIRadioAssistantPage() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {[
                 { step: 1, icon: Mic, title: 'تحدث', description: 'اضغط على زر الميكروفون وتحدث بالأمر الذي تريده' },
-                { step: 2, icon: Brain, title: 'تحليل', description: 'يحلل الذكاء الاصطناعي طلبك ويفهم ما تريد' },
+                { step: 2, icon: Brain, title: 'تحليل', description: 'يحلل المساعد طلبك ويفهم ما تريد' },
                 { step: 3, icon: Radio, title: 'تشغيل', description: 'يتم تشغيل المحطة المطلوبة أو تنفيذ الأمر فوراً' },
               ].map((item) => (
                 <Card key={item.step} className="text-center">
