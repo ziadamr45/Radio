@@ -118,12 +118,11 @@ GitHub: https://github.com/ziadamr45
 
 ---
 
-## ⚠️ رخصة عرض المصدر
+### 📜 الرخصة
 
 هذا المشروع متاح **للعرض والاطلاع فقط**. لا يمكن نسخ الكود أو إعادة إنتاجه أو استخدامه في مشاريع أخرى. راجع [LICENSE.md](./LICENSE.md) للتفاصيل الكاملة.
 
 ---
-
 
 
 ### 👨‍💻 المطور
@@ -144,6 +143,7 @@ GitHub: https://github.com/ziadamr45
 ---
 
 ## English
+
 
 **Esma3 Radio** is a modern web platform designed to deliver a smooth and immersive radio streaming experience with beautiful UI/UX, multilingual support, smart recommendations, and advanced integrations.
 
@@ -249,7 +249,6 @@ Portfolio: https://ziadamrme.vercel.app
 ---
 
 
-
 ### 👨‍💻 Developer
 
 **Ziad Amr**
@@ -265,6 +264,6 @@ Portfolio: https://ziadamrme.vercel.app
 - 💼 LinkedIn: [ziad-amr](https://www.linkedin.com/in/ziad-amr-44633a411)
 - 📧 Email: ziad90216@gmail.com
 
-## ⚠️ Source Available License
+### ⚠️ Source Available License
 
 This project is available for **viewing and reference only**. The code cannot be copied, reproduced, or used in other projects. See [LICENSE.md](./LICENSE.md) for full details.
