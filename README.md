@@ -1,56 +1,89 @@
+<div align="center">
+
+
+## 📸 لقطات الشاشة | Screenshots
+
+![Screenshot](screenshot.png)
+
 # 📻 إسمع راديو | Esma3 Radio
 
-[![License](https://img.shields.io/badge/License-Source_Available-blue)](LICENSE.md)
-[![Version](https://img.shields.io/badge/Version-1.0.0-blue)]()
-[![Website](https://img.shields.io/website?url=https://esma3radio.vercel.app)](https://esma3radio.vercel.app)
+### منصة بث راديو حديثة بتصميم عربي أولاً مع تكاملات ذكية
+### Modern Arabic-first radio streaming platform with smart integrations
 
-> منصة بث راديو حديثة بتصميم عربي أولاً مع تكاملات ذكية
-> Modern Arabic-first radio streaming platform with smart integrations
+[![Live Demo](https://img.shields.io/badge/Live-Demo-0a5c5c?style=for-the-badge&logo=vercel&logoColor=white)](https://esma3radio.vercel.app)
+[![GitHub](https://img.shields.io/badge/GitHub-Repository-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/ziadamr45/Radio)
 
-![Esma3 Radio Screenshot](screenshot.png)
+</div>
 
 ---
 
-## 🇪🇬 العربية
+## 📖 نبذة
 
-### المميزات
+<div dir="rtl">
 
-- 🎧 **بث راديو مباشر** — استمع لمحطات الراديو مباشرة
-- 🤖 **مساعد ذكي** — مساعد راديو ذكي متكامل
-- 🌍 **دعم العربية والإنجليزية** — واجهة ثنائية اللغة
-- 🔔 **نظام إشعارات فورية** — إشعارات فورية وتنبيهات
-- 📱 **تصميم متجاوب بالكامل** — يعمل على جميع الأجهزة
-- 🔐 **نظام مصادقة** — تسجيل دخول آمن
-- 📊 **لوحة تحليلات** — إحصائيات وتحليلات مفصلة
-- ⚡ **أداء مُحسّن** — سرعة وكفاءة عالية
-- 🌙 **وضع داكن** — مظهر داكن أنيق
-- 🔎 **بحث متقدم** — ابحث عن المحطات بسهولة
-- ✨ **حركات سلسة** — أنيميشن وانتقالات سلسة
+**إسمع راديو** هي منصة بث راديو حديثة مصممة بخاصية "العربية أولاً" مع تكاملات ذكية تضمن تجربة استماع فريدة. توفر المنصة بث راديو مباشر، مساعد ذكي للتفاعل الصوتي، إشعارات فورية مخصصة، لوحة تحليلات متقدمة، ودعم كامل للغتين العربية والإنجليزية. التطبيق مبني بتقنيات Next.js و TypeScript لضمان أداء عالي وتجربة مستخدم سلسة على جميع الأجهزة.
 
-### التقنيات
+</div>
 
-- Next.js، React، TypeScript، Tailwind CSS، shadcn/ui، Framer Motion، PostgreSQL، Prisma، NextAuth، Smart Assistant، Web Push، Radio APIs
+## ✨ المميزات
+
+| الميزة | الوصف |
+|--------|-------|
+| 🎧 بث راديو مباشر | استماع مباشر لمحطات الراديو المتنوعة |
+| 🤖 مساعد ذكي | مساعد صوتي ذكي للتفاعل والتوصيات |
+| 🌍 دعم العربية والإنجليزية | واجهة ثنائية اللغة بالكامل (i18n) |
+| 🔔 نظام إشعارات فورية | إشعارات مخصصة في الوقت الحقيقي |
+| 📱 تصميم متجاوب بالكامل | يعمل بسلاسة على جميع الأجهزة |
+| 🔐 نظام مصادقة | تسجيل دخول آمن ومحمي |
+| 📊 لوحة تحليلات | إحصائيات وتحليلات تفصيلية |
+| ⚡ أداء مُحسّن | سرعة وكفاءة عالية في التشغيل |
+| 🌙 وضع داكن | مظهر داكن مريح للعين |
+| 🔎 بحث متقدم | بحث ذكي وسريع في المحطات |
+| ✨ حركات سلسة | انتقالات وأنيميشن سلسة ومميزة |
+
+## 🛠️ التقنيات
+
+| التقنية | الاستخدام |
+|---------|-----------|
+| ![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat&logo=next.js&logoColor=white) | إطار العمل الكامل |
+| ![React](https://img.shields.io/badge/React-61DAFB?style=flat&logo=react&logoColor=black) | مكتبة واجهة المستخدم |
+| ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=typescript&logoColor=white) | تطوير آمن بالأنواع |
+| ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=flat&logo=tailwindcss&logoColor=white) | التصميم |
+| ![shadcn/ui](https://img.shields.io/badge/shadcn/ui-000000?style=flat) | مكونات واجهة المستخدم |
+| ![Framer Motion](https://img.shields.io/badge/Framer_Motion-0055FF?style=flat&logo=framer&logoColor=white) | الحركات والأنيميشن |
+| ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat&logo=postgresql&logoColor=white) | قاعدة البيانات |
+| ![Prisma](https://img.shields.io/badge/Prisma-2D3748?style=flat&logo=prisma&logoColor=white) | ORM لقاعدة البيانات |
+| ![NextAuth](https://img.shields.io/badge/NextAuth-000000?style=flat) | نظام المصادقة |
+| ![Smart Assistant](https://img.shields.io/badge/Smart_Assistant-4A90D9?style=flat) | المساعد الذكي |
+| ![Web Push](https://img.shields.io/badge/Web_Push-E91E63?style=flat) | الإشعارات الفورية |
+| ![Radio APIs](https://img.shields.io/badge/Radio_APIs-FF9800?style=flat) | واجهات بث الراديو |
+
+## 🚀 التشغيل
+
+### المتطلبات
+
+- Node.js 18+
+- npm أو yarn
 
 ### التثبيت
 
 ```bash
+# استنساخ المستودع
 git clone https://github.com/ziadamr45/Radio.git
 cd Radio
+
+# تثبيت التبعيات
 npm install
+
+# تشغيل خادم التطوير
 npm run dev
 ```
 
-### تجربة مباشرة
+التطبيق سيعمل على `http://localhost:3000`
 
-[esma3radio.vercel.app](https://esma3radio.vercel.app)
+### 📜 الرخصة
 
-### المساهمة
-
-راجع [CONTRIBUTING.md](CONTRIBUTING.md)
-
-### الرخصة
-
-هذا المشروع يستخدم [رخصة عرض المصدر](LICENSE.md) — © 2026 زياد عمرو
+هذا المشروع متاح **للعرض والاطلاع فقط**. لا يمكن نسخ الكود أو إعادة إنتاجه أو استخدامه في مشاريع أخرى.
 
 ---
 
@@ -77,46 +110,70 @@ npm run dev
 
 ---
 
-## 🌐 English
+## English
+
+
+**Esma3 Radio** is a modern Arabic-first radio streaming platform with smart integrations that ensure a unique listening experience. The platform provides live radio streaming, a smart voice assistant, personalized push notifications, an advanced analytics dashboard, and full bilingual support for Arabic and English. Built with Next.js and TypeScript for high performance and a seamless user experience across all devices.
 
 ### Features
 
-- 🎧 **Live radio streaming** — Listen to radio stations live
-- 🤖 **Smart assistant** — Integrated smart radio assistant
-- 🌍 **Arabic & English support** — Bilingual interface (i18n)
-- 🔔 **Push notifications** — Instant notifications and alerts
-- 📱 **Fully responsive design** — Works on all devices
-- 🔐 **Authentication system** — Secure login system
-- 📊 **Analytics dashboard** — Detailed statistics and analytics
-- ⚡ **Optimized performance** — High speed and efficiency
-- 🌙 **Dark mode** — Elegant dark theme
-- 🔎 **Search functionality** — Easily find stations
-- ✨ **Smooth animations** — Smooth transitions and animations
+| Feature | Description |
+|---------|-------------|
+| 🎧 Live radio streaming | Listen live to diverse radio stations |
+| 🤖 Smart assistant | Intelligent voice assistant for interaction & recommendations |
+| 🌍 Arabic & English support | Fully bilingual interface (i18n) |
+| 🔔 Push notifications | Personalized real-time notifications |
+| 📱 Fully responsive | Works smoothly on all devices |
+| 🔐 Authentication system | Secure and protected login |
+| 📊 Analytics dashboard | Detailed statistics and analytics |
+| ⚡ Optimized performance | High speed and efficiency |
+| 🌙 Dark mode | Comfortable dark theme |
+| 🔎 Search functionality | Smart and fast station search |
+| ✨ Smooth animations | Smooth transitions and animations |
 
-### Technologies
+### Tech Stack
 
-- Next.js, React, TypeScript, Tailwind CSS, shadcn/ui, Framer Motion, PostgreSQL, Prisma, NextAuth, Smart Assistant, Web Push, Radio APIs
+| Technology | Purpose |
+|------------|---------|
+| ![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat&logo=next.js&logoColor=white) | Fullstack Framework |
+| ![React](https://img.shields.io/badge/React-61DAFB?style=flat&logo=react&logoColor=black) | UI Library |
+| ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=typescript&logoColor=white) | Type-safe Development |
+| ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=flat&logo=tailwindcss&logoColor=white) | Styling |
+| ![shadcn/ui](https://img.shields.io/badge/shadcn/ui-000000?style=flat) | UI Components |
+| ![Framer Motion](https://img.shields.io/badge/Framer_Motion-0055FF?style=flat&logo=framer&logoColor=white) | Animations |
+| ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat&logo=postgresql&logoColor=white) | Database |
+| ![Prisma](https://img.shields.io/badge/Prisma-2D3748?style=flat&logo=prisma&logoColor=white) | Database ORM |
+| ![NextAuth](https://img.shields.io/badge/NextAuth-000000?style=flat) | Authentication |
+| ![Smart Assistant](https://img.shields.io/badge/Smart_Assistant-4A90D9?style=flat) | Smart Assistant |
+| ![Web Push](https://img.shields.io/badge/Web_Push-E91E63?style=flat) | Push Notifications |
+| ![Radio APIs](https://img.shields.io/badge/Radio_APIs-FF9800?style=flat) | Radio Streaming APIs |
 
-### Installation
+### Getting Started
+
+#### Prerequisites
+
+- Node.js 18+
+- npm or yarn
+
+#### Installation
 
 ```bash
+# Clone the repository
 git clone https://github.com/ziadamr45/Radio.git
 cd Radio
+
+# Install dependencies
 npm install
+
+# Start development server
 npm run dev
 ```
 
-### Live Demo
-
-[esma3radio.vercel.app](https://esma3radio.vercel.app)
-
-### Contributing
-
-See [CONTRIBUTING.md](CONTRIBUTING.md)
+The app will be available at `http://localhost:3000`
 
 ### License
 
-This project uses [Source Available License](LICENSE.md) — © 2026 Ziad Amr
+This project is available for **viewing and reference only**. The code cannot be copied, reproduced, or used in other projects.
 
 ---
 
